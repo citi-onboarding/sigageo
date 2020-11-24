@@ -3,9 +3,9 @@ const User = keystone.list('User');
 
 exports = module.exports = (done) => {
 	new User.model({
-		name: 'admin',
-		email: 'admin@gmail.com',
-		password: 'admin',
+		name: 'sigaGeo',
+		email: 'sigageodev@gmail.com',
+		password: 'SigageoAlysson',
 		canAccessKeystone: true,
 	}).save(done);
 };
