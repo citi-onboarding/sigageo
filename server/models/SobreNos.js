@@ -35,3 +35,9 @@ SobreNos.add({
 });
 
 SobreNos.register();
+
+new SobreNos.model({
+    key: 'Sobre',
+    quemSomos: 'Fale um pouco sobre a empresa aqui!',
+    missao: 'Fale sobre a missão da empresa nesse espaço!'
+}).save();
