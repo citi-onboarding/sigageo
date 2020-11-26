@@ -3,11 +3,22 @@ const keystone = require('keystone');
 const cors = require('cors');
 
 const Post = keystone.list('Posts');
+const Depoimentos = keystone.list('Depoimentos');
 const SobreNos = keystone.list('SobreNos');
 
 module.exports = (app) => {
   app.use(cors());
 
+  app.get('/api/depoimentos', (req, res) => {
+    Depoimentos.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+  
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
@@ -34,5 +45,7 @@ module.exports = (app) => {
 
   app.get('*', (req, res) => {
 		res.redirect('/');
-	});
+  });
+  
+ 
 };
