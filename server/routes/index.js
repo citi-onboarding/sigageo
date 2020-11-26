@@ -8,6 +8,16 @@ const Depoimentos = keystone.list('Depoimentos');
 module.exports = (app) => {
   app.use(cors());
 
+  app.get('/api/depoimentos', (req, res) => {
+    Depoimentos.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+  
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
@@ -26,13 +36,5 @@ module.exports = (app) => {
 		res.redirect('/');
   });
   
-  app.get('/api/depoimentos', (req, res) => {
-    Depoimentos.model.find((err, data) => {
-      if (err) {
-        res.status(500).send('DB Error');
-      } else {
-        res.send(data);
-      }
-    });
-  });
+ 
 };
