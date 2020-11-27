@@ -4,6 +4,7 @@ const cors = require('cors');
 
 const Post = keystone.list('Posts');
 const Depoimentos = keystone.list('Depoimentos');
+const Servicos = keystone.list('Servicos');
 const SobreNos = keystone.list('SobreNos');
 const Valores = keystone.list('Valores');
 const Servicos = keystone.list('Servicos');
