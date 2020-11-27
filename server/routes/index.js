@@ -7,6 +7,7 @@ const Depoimentos = keystone.list('Depoimentos');
 const Servicos = keystone.list('Servicos');
 const SobreNos = keystone.list('SobreNos');
 const Valores = keystone.list('Valores');
+const Banner = keystone.list('Banner');
 
 module.exports = (app) => {
   app.use(cors());
