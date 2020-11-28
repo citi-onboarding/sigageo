@@ -2,11 +2,11 @@ const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
 
-const Post = keystone.list('Posts');
 const Depoimentos = keystone.list('Depoimentos');
+const Servicos = keystone.list('Servicos');
 const SobreNos = keystone.list('SobreNos');
 const Valores = keystone.list('Valores');
-const Servicos = keystone.list('Servicos');
+const Banner = keystone.list('Banner');
 const Footer = keystone.list('Footer');
 
 module.exports = (app) => {
@@ -36,6 +36,16 @@ module.exports = (app) => {
     });
   });
 
+  app.get('/api/banner', (req, res) => {
+    Banner.model.find((err, data) => {
+      if (err) {
+        res.status(500).send('DB Error');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+  
   app.get('/api/sobrenos', (req, res) => {
     SobreNos.model.find((err, data) => {
       if (err) {

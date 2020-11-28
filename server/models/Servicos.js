@@ -3,15 +3,14 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 const Servicos = new keystone.List('Servicos',
-{map: {nome: "titulo"}, label:"Serviços"}); 
+{map: {name: "titulo"}, label:"Serviços"}); 
 
 Servicos.add({
 
   image: {
     type: Types.CloudinaryImages,
     require: true,
-    lobel: "Imagem",
-    note: "Coloque aqui uma imagem do seu serviço"
+    label: "Imagem do serviço"
   },
 
   titulo: {
@@ -29,8 +28,8 @@ Servicos.add({
     initial: true,
     index: true,
     label: "Descrição do serviço",
-    note: "Conte-nos um pouco sobre o serviço",
-  }
+    note: "Conte-nos um pouco sobre o serviço"
+  },
 
 });
 
