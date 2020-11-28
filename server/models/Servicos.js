@@ -10,8 +10,7 @@ Servicos.add({
   image: {
     type: Types.CloudinaryImages,
     require: true,
-    lobel: "Imagem",
-    note: "Coloque aqui uma imagem do seu serviço"
+    label: "Imagem do serviço"
   },
 
   titulo: {
@@ -29,8 +28,8 @@ Servicos.add({
     initial: true,
     index: true,
     label: "Descrição do serviço",
-    note: "Conte-nos um pouco sobre o serviço",
-  }
+    note: "Conte-nos um pouco sobre o serviço"
+  },
 
 });
 
