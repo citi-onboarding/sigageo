@@ -7,6 +7,8 @@ const Depoimentos = keystone.list('Depoimentos');
 const Servicos = keystone.list('Servicos');
 const SobreNos = keystone.list('SobreNos');
 const Valores = keystone.list('Valores');
+const Servicos = keystone.list('Servicos');
+const Footer = keystone.list('Footer');
 
 module.exports = (app) => {
   app.use(cors());
@@ -48,7 +50,7 @@ module.exports = (app) => {
   app.get('/api/sobrenos', (req, res) => {
     SobreNos.model.find((err, data) => {
       if (err) {
-        res.status(500).send(('Erro no Servidor'));
+        res.status(500).send(('DB Error'));
       } else {
         res.send(data);
       }
@@ -58,7 +60,17 @@ module.exports = (app) => {
   app.get('/api/valores', (req, res) => {
     Valores.model.find((err, data) => {
       if (err) {
-        res.status(500).send(('Erro no Servidor'));
+        res.status(500).send(('DB Error'));
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+  app.get('/api/footer', (req, res) => {
+    Footer.model.find((err, data) => {
+      if (err) {
+        res.status(500).send(('DB Error'));
       } else {
         res.send(data);
       }
