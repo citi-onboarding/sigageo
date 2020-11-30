@@ -13,6 +13,14 @@ Depoimentos.add({
     label: "Nome",
   },
 
+  cargo:{
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+    label: "cargo",
+  },
+
   depoimento:{
     type: Types.Textarea,
     required: true,
