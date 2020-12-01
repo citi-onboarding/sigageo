@@ -2,17 +2,17 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Footer = new keystone.List('Footer', {
+const Contatos = new keystone.List('Contatos', {
     map: {name: 'key'},
-    label: 'Footer',
+    label: 'Contatos',
     nocreate: true,
     nodelete: true
 })
 
-Footer.add({
+Contatos.add({
     key: {
         type: Types.Text,
-        default: 'Footer',
+        default: 'Contatos',
         noedit: true
     },
     telefone: {
@@ -68,4 +68,4 @@ Footer.add({
     },
 });
 
-Footer.register();
+Contatos.register();

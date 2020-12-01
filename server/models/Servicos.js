@@ -22,6 +22,15 @@ Servicos.add({
     note: "Dê um título ao seu serviço"
   },
 
+  subtitulo:{
+    type: Types.Text,
+    required: true,
+    initial: true,
+    index: true,
+    label: "Subtítulo do serviço",
+    note: "Dê um subtítulo ao seu serviço"
+  },
+
   descricao: {
     type: Types.Textarea,
     required: true,
