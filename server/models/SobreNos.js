@@ -31,7 +31,16 @@ SobreNos.add({
         index: true,
         label: 'Missão',
         note: 'Conte-nos sobre a missão da empresa'
+    },
+    visao: {
+        type: Types.Textarea,
+        require: true,
+        initial: true,
+        index: true,
+        label: 'Visão',
+        note: 'Conte-nos sobre a visão da empresa'
     }
+
 });
 
 SobreNos.register();
