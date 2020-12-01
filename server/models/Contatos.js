@@ -69,5 +69,3 @@ Contatos.add({
 });
 
 Contatos.register();
-
-new Contatos.model().save();
