@@ -1,7 +1,7 @@
 .card{
-    padding: 5px;
+    padding: 10px;
     background-color: #a5e2d7;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -19,5 +19,15 @@
 }
 
 .card p {
+    text-align: center;
+    margin: 0;
+}
+
+.card #texto {
+    margin: 16px 5px;
+}
+
+.card span {
+    display: block;
     text-align: center;
 }
