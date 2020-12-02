@@ -1,9 +1,9 @@
 const keystone = require('keystone');
-const Footer = keystone.list('Footer');
+const Contatos = keystone.list('Contatos');
 
 const handler = {
     getData: function (req, res) {
-        Footer.model.find((err, data) => {
+        Contatos.model.find((err, data) => {
           if (err) {
             res.status(500).send('DB Error');
           } else {
