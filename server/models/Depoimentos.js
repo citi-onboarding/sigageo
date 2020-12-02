@@ -28,6 +28,12 @@ Depoimentos.add({
     index: true,
   },
   
+  imagem: {
+    type: Types.CloudinaryImage,
+    require: true,
+    initial: true,
+    label: "imagem"
+  }
 });
 
 Depoimentos.register();
