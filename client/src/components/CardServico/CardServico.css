@@ -1,0 +1,50 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');;
+}
+.card{
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    background-color: #0e1312;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+.card img{
+    width: 15%;
+    align-self: flex-start;
+}
+
+.card h2 {
+    width: 70%;
+    font-weight: 900;
+    font-size: 25px;
+    color: #30736C;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    text-align: center;
+    margin: 0;
+}
+
+.card #texto {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.card span {
+    display: block;
+    text-align: center;
+}
