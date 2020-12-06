@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import CardServico from "../CardServico"
+import CardServico from "../CardServico";
+import { SlickDot, SlickNav, SlickArrows } from "../SlickControls";
 
 import "./SlickServico.css";
 
@@ -15,6 +16,14 @@ export default class SimpleSlider extends Component {
         centerMode: true,
         arrows: true,
         className: 'slides',
+        appendDots: dots => (
+          <SlickNav dots = {dots} />
+        ),
+        customPaging: () => (
+          <SlickDot />
+        ),
+        nextArrow: <SlickArrows direction = "next" />,
+        prevArrow: <SlickArrows direction = "last" />
 };
     return (
       <div className="slick-section">
