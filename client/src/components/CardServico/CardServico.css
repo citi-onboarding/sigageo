@@ -5,9 +5,9 @@
 .card{
     width: 95%;
     height: 100%;
-    padding: 10px;
-    background-color: #0e1312;
-    border-radius: 10px;
+    padding: 7%;
+    background-color: #A5E2D7;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,19 +19,24 @@
 .card img{
     width: 15%;
     align-self: flex-start;
+    transition: .2s;
 }
 
 .card h2 {
     width: 70%;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 150%;
     color: #30736C;
-    margin-top: 5px;
+    margin: 5% 0;
     text-align: center;
+    transition: .2s;
 }
 
 .card h3 {
     margin: 0;
+    font-size: 90%;
+    font-weight: normal;
+    transition: .2s;
 }
 
 .card p {
@@ -40,8 +45,8 @@
 }
 
 .card #texto {
-    margin: 0 20px;
-    font-size: 20px;
+    margin: 3%;
+    font-size: 90%;
 }
 
 .card span {
