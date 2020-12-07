@@ -1,10 +1,10 @@
 import {
-  SlickServico,
+  PostList,
 } from './components';
 
 function App() {
   return (
-    <SlickServico />
+    <PostList />
   );
 }
 

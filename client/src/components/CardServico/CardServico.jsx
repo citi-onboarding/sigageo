@@ -15,11 +15,7 @@ function CardServico(props) {
             <h2>{titulo}</h2>
             <h3>{subtitulo}</h3>
             <div id="texto">
-                {(Array.isArray(texto)) ? (
-                    texto.map(linha => <span>{linha}</span>)
-                ) : (
-                    <p>{texto}</p>
-                )}
+                <p>{texto}</p>
             </div>  
         </div>
     );
