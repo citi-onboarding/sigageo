@@ -10,11 +10,11 @@ function CardServico(props) {
     } = props;
 
     return (
-        <div className="card">
-            <img src={imagem} alt="icone"/>
+        <div className="card-servico">
+            <img src={imagem} alt="icone-servico"/>
             <h2>{titulo}</h2>
             <h3>{subtitulo}</h3>
-            <div id="texto">
+            <div id="texto-servico">
                 <p>{texto}</p>
             </div>  
         </div>
