@@ -54,3 +54,23 @@
     display: block;
     text-align: center;
 }
+
+@media only screen and (max-width: 700px){
+    .card h2{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .card {
+        margin: 0 2%;
+    }
+
+    .card h3{
+        font-size: 120%;
+    }
+
+    .card #texto {
+        font-size: 120%;
+    }
+}

@@ -23,6 +23,7 @@
     height: 550px;
     display: flex;
     align-items: center;
+    min-width: 100%;
 }
 
 .slick-slide {
@@ -46,12 +47,44 @@
     margin-top: 20px;
 }
 
-.slick-center{
-    transform: scale(1.5);
-}
 
 @media only screen and (max-width: 1300px) {
     .slick-list{
         width: 50%;
+    }
+
+    .slides{
+        grid-template-columns: 20% 5% 50% 5% 20%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .slick-list{
+        width: 80%;
+        padding: 0 45px !important;
+    }
+
+    .slick-track{
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .slick-center {
+        width: 650px !important;
+        height: 100% !important;
+    }
+    
+    .slick-center #texto {
+        font-size: 120%;
+    }
+    
+    .slick-center h3 {
+        font-size: 120%;
+    }
+    
+    .slick-center h2 {
+        font-size: 170%;
+        margin: 7% 0;
     }
 }

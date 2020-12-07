@@ -1,5 +1,5 @@
 .slick-dot {
-    height: 1px;
+    height: 2px;
     width: 100%;
     background-color: #30736c;
     transition: .2s;
@@ -27,6 +27,13 @@
     display: inline-block;
 }
 
+.slick-dots h2{
+    font-family: 'Roboto';
+    font-size: 2rem;
+    color: #30736c;
+    font-weight: 900;
+}
+
 .slick-active .slick-dot {
     height: 5px;
 }
@@ -34,16 +41,16 @@
 .slick-arrow {
     height: 40px;
     width: 100%;
-    margin: 15px auto;
+    margin: 20px auto;
 }
 
 .next{
     grid-column: 4;
+    transform: rotate(180deg);
 }
 
 .last{
     grid-column: 2;
-    transform: rotate(180deg);
 }
 
 .arrow-img {
@@ -54,4 +61,28 @@
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+@media only screen and (max-width: 700px) {
+    .slick-arrow{
+        visibility: hidden;
+    }
+
+    .slick-dots h2{
+        visibility: hidden;
+    }
+
+    .slick-dot {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #30736c;
+    }
+
+    .slick-active .slick-dot{
+        height: 20px;
+        width: 20px;
+        background-color: #30736c;
+    }
 }
