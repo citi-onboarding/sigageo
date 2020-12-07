@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');;
+}
+.card{
+    padding: 10px;
+    background-color: #a5e2d7;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.card img{
+    width: 25%;
+    align-self: flex-start;
+}
+
+.card h2 {
+    width: fit-content;
+    font-weight: 900;
+    font-size: 25px;
+    color: #30736C;
+    margin-top: 5px;
+}
+
+.card p {
+    text-align: center;
+    margin: 0;
+}
+
+.card #texto {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.card span {
+    display: block;
+    text-align: center;
+}
