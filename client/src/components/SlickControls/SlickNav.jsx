@@ -2,13 +2,13 @@ import './SlickControls.css';
 
 function SlickNav(props) {
 
-    const { dots } = props;
+    const { dots, atual, total } = props;
 
     return (
         <div className="slick-dots">
-            <h2>01</h2>
+            <h2>{'0' + atual}</h2>
               <ul style={{width: '80%'}}> {dots} </ul>
-            <h2>02</h2>
+            <h2>{'0' + total}</h2>
         </div>
     );
 }

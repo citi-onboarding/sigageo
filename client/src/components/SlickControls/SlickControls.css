@@ -11,18 +11,19 @@
     margin: 0;
     padding: 0;
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .slick-dots ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 0;
 }
 
 .slick-dots li{
-    width: 20%;
+    flex: 2 1 auto;
     marker: none;
     display: inline-block;
 }
@@ -78,6 +79,7 @@
         border-radius: 50%;
         background-color: transparent;
         border: 1px solid #30736c;
+        margin: 0 auto;
     }
 
     .slick-active .slick-dot{
