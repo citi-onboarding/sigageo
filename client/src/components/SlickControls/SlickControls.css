@@ -43,6 +43,7 @@
     height: 40px;
     width: 100%;
     margin: 20px auto;
+    z-index: 2;
 }
 
 .next{

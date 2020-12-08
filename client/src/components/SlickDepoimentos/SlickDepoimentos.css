@@ -3,53 +3,80 @@
     min-width: 0;
 }
 
-.slick-depoimentos .slides {
-    position: relative;
-    display: grid;
-    grid-template-columns: 30% 5% 30% 5% 30%;
-    grid-template-rows: 2fr 1fr;
+.slick-depoimentos{
+    width: 100%;
+    height: 630px !important;
     overflow: hidden;
 }
 
-.slick-depoimentos .slick-list {
-    grid-column: 1 / span 5;
-    grid-row: 1;
-    height: 300px !important;
+.slick-depoimentos .slides {
+    width: 65%;
+    height: 100%;
+    float: right;
+    display: grid;
+    grid-template-columns: 60% 5% 30% 5%;
+    grid-template-rows: 90% 10%;
 }
 
-.slick-depoimentos .slick-track {
-    height: 550px;
-    min-width: 100%;
+.slick-depoimentos .slick-list {
+    height: 630px;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 4;
+    padding: 0 !important;
 }
 
 .slick-depoimentos .slick-slide {
-    display: block;
-    box-sizing: border-box;
-    transition: .2s;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .2s;
 }
 
-.slick-depoimentos .slick-slide > div{
-    height: 100%;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
+.slick-depoimentos .slick-arrow {
+    grid-row: 2;
+    float: bottom;
+    width: 60%;
 }
 
 .slick-depoimentos .slick-dots{
     grid-row: 2;
     grid-column: 3;
-    position: relative;
     margin-top: 20px;
+    z-index: 2;
 }
+
+.slick-depoimentos .slick-dots h2 {
+    font-size: 150%;
+    margin: 0 auto;
+}
+
+.slick-depoimentos .slick-center {
+    transform: translateX(-50%);
+}
+
+/* ----------------------------------------------------*/
 
 
 @media only screen and (max-width: 1300px) {
-    .slick-depoimentos .slick-list{
-        width: 50%;
+    .slick-depoimentos .slick-center {
+        transform: translateX(0);
     }
 
-    .slick-depoimentos .slides{
+    .slick-depoimentos .slides {
+        float: none;
+        width: 100%;
         grid-template-columns: 20% 5% 50% 5% 20%;
+    }
+
+    .slick-depoimentos .slick-list {
+        grid-row: 1;
+        grid-column: 1 / span 5;
+        overflow: hidden;
+    }
+
+    .slick-depoimentos .slick-slide > div{
+        margin: 0 auto;
     }
 }
 
@@ -57,13 +84,10 @@
     .slick-depoimentos .slick-list{
         width: 80%;
         padding: 0 45px !important;
+        overflow: visible;
     }
 
     .slick-depoimentos .slick-track{
         height: fit-content;
     }
-}
-
-@media only screen and (min-width: 700px) {
-    
 }
