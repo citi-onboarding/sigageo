@@ -1,0 +1,69 @@
+*{
+    min-height: 0;
+    min-width: 0;
+}
+
+.slick-depoimentos .slides {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+    grid-template-rows: 2fr 1fr;
+    overflow: hidden;
+}
+
+.slick-depoimentos .slick-list {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    height: 300px !important;
+}
+
+.slick-depoimentos .slick-track {
+    height: 550px;
+    min-width: 100%;
+}
+
+.slick-depoimentos .slick-slide {
+    display: block;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.slick-depoimentos .slick-slide > div{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-depoimentos .slick-dots{
+    grid-row: 2;
+    grid-column: 3;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .slick-depoimentos .slick-list{
+        width: 50%;
+    }
+
+    .slick-depoimentos .slides{
+        grid-template-columns: 20% 5% 50% 5% 20%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .slick-depoimentos .slick-list{
+        width: 80%;
+        padding: 0 45px !important;
+    }
+
+    .slick-depoimentos .slick-track{
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    
+}
