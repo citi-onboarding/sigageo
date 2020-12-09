@@ -1,10 +1,12 @@
 import {
-  Contato,
+  PostList,
 } from './components';
 
 function App() {
   return (
-    <Contato />
+    <div className="site">
+      <PostList />
+    </div>
   );
 }
 
