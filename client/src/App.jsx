@@ -1,10 +1,10 @@
 import {
-  SlickDepoimentos,
+  Contato,
 } from './components';
 
 function App() {
   return (
-    <SlickDepoimentos />
+    <Contato />
   );
 }
 
