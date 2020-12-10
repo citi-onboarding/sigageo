@@ -28,7 +28,7 @@
   height: 100%;
   margin-left: 10%;
 
-  background-image: url(./assets//path.png);
+  background-image: url(./assets/path.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,6 +36,7 @@
 
 .card-depoimento {
   width: 820px;
+  min-height: 290px;
   height: fit-content;
   padding: 40px 60px;
   background-color: #a5e2d7;

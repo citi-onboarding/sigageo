@@ -114,6 +114,12 @@
     }
 }
 
+@media only screen and (max-width: 1300px) and (min-width: 700px){
+    .slick-depoimentos{
+        height: 700px !important;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .slick-depoimentos .slick-center {
         transform: translateX(0);

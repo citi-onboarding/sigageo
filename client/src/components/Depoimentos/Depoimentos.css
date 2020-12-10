@@ -1,0 +1,34 @@
+@font-face{
+    font-family: 'geometr706';
+    src: url(./assets/geometr706-blkcn-bt-black.ttf);
+}
+
+.secao-depoimentos{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.descricao-depoimentos{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.descricao-depoimentos h2{
+    font-size: 35px;
+    margin: 20px 0;
+    font-family: 'geometr706';
+}
+
+.descricao-depoimentos p{
+    font-size: 20px;
+    margin: 30px 0;
+    font-family: 'Roboto';
+}
+
+.slick-depoimentos-div{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
