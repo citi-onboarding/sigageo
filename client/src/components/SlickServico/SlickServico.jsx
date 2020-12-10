@@ -18,7 +18,7 @@ function SlickServico() {
   }, []);
 
   return (
-    <div className="slick-section">
+    <div className="slick-servico">
       <Slider 
         afterChange = {(currentSlide) => {
           let i = (currentSlide ? currentSlide : 0) + 1;
@@ -43,7 +43,7 @@ function SlickServico() {
               titulo={servico.titulo}
               subtitulo={servico.subtitulo}
               texto={servico.descricao}
-              imagem={servico.image[0]?.url}
+              imagem={servico.image[0]?.secure_url}
               key={i}
             />
           );

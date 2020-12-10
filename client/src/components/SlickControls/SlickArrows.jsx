@@ -1,4 +1,5 @@
 import './SlickControls.css';
+import arrow from './assets/arrow.png';
 
 function SlickArrows(props) {
     const {direction, onClick} = props;
@@ -7,7 +8,7 @@ function SlickArrows(props) {
             className={`slick-arrow ${direction}`}
             onClick={onClick}
         >
-            <div className="arrow-img"></div>
+            <img src={arrow} alt="" className="arrow-img"/>
         </div>
     );
 }

@@ -3,7 +3,7 @@
     min-width: 0;
 }
 
-.slides {
+.slick-servico .slides {
     position: relative;
     display: grid;
     grid-template-columns: 30% 5% 30% 5% 30%;
@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.slick-list {
+.slick-servico .slick-list {
     grid-column: 1 / span 5;
     grid-row: 1;
     height: 100% !important;
@@ -19,28 +19,28 @@
     margin: 0 auto;
 }
 
-.slick-track {
+.slick-servico .slick-track {
     height: 550px;
     display: flex;
     align-items: center;
     min-width: 100%;
 }
 
-.slick-slide {
+.slick-servico .slick-slide {
     display: block;
     box-sizing: border-box;
     height: 370px;
     transition: .2s;
 }
 
-.slick-slide > div{
+.slick-servico .slick-slide > div{
     height: 100%;
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.slick-dots{
+.slick-servico .slick-dots{
     grid-row: 2;
     grid-column: 3;
     position: relative;
@@ -49,41 +49,41 @@
 
 
 @media only screen and (max-width: 1300px) {
-    .slick-list{
+    .slick-servico .slick-list{
         width: 50%;
     }
 
-    .slides{
+    .slick-servico .slides{
         grid-template-columns: 20% 5% 50% 5% 20%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .slick-list{
+    .slick-servico .slick-list{
         width: 80%;
         padding: 0 45px !important;
     }
 
-    .slick-track{
+    .slick-servico .slick-track{
         height: fit-content;
     }
 }
 
 @media only screen and (min-width: 700px) {
-    .slick-center {
+    .slick-servico .slick-center {
         width: 650px !important;
         height: 100% !important;
     }
     
-    .slick-center #texto-servico {
+    .slick-servico .slick-center #texto-servico {
         font-size: 120%;
     }
     
-    .slick-center h3 {
+    .slick-servico .slick-center h3 {
         font-size: 120%;
     }
     
-    .slick-center h2 {
+    .slick-servico .slick-center h2 {
         font-size: 170%;
         margin: 7% 0;
     }
