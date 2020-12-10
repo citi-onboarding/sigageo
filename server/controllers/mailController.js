@@ -5,14 +5,14 @@ dotenv.config();
 
 const sendMail = async (req, res, next) => {
     try {
-        const {nome, email, telefone, assunto, conheceu, message} = req.body;
+        const {nome, email, telefone, assunto, conheceu, mensagem} = req.body;
 
         const body = `
         Nome: ${nome}
         Email: ${email}
         Telefone: ${telefone}
         Como nos conheceu: ${conheceu}
-        Mensagem: ${message}`;
+        Mensagem: ${mensagem}`;
 
         await mailServer({
             destinationUser: process.env.CLIENT_EMAIL,
