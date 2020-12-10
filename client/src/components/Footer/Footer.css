@@ -1,0 +1,31 @@
+.footer{
+    background-color: #30736C;
+    width: 100%;
+    height: 81px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9vw;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+
+.footer img {
+    width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        justify-content: center;
+        height: 24px;
+    }
+
+    .footer > span {
+        visibility: hidden;
+        position: absolute;
+    }
+} 
