@@ -3,12 +3,11 @@
     width: 100%;
     height: 81px;
     color: white;
-    position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 9vw;
+    padding: 0 6vw;
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Roboto';
