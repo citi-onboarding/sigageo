@@ -78,12 +78,17 @@ input[type='submit']{
     width: 130px;
     height: 30px;
     background-color: #A5E2D7;
+    transition: .2s;
     color: #30736C;
     border-radius: 10px;
     border: none;
     font-family: 'Roboto';
     font-size: 20px;
     margin: 15px auto;
+}
+
+input[type='submit']:hover{
+    background-color: #50b9a6;
 }
 
 .infos {
@@ -113,6 +118,7 @@ input[type='submit']{
     font-size: 20px;
     margin-right: 10px;
     max-width: 400px;
+    text-align: center;
 }
 
 .info-icon{
@@ -147,46 +153,17 @@ input[type='submit']{
         background-position: center;
     }
 
-    .infos{
-        width: 100vw;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info{
-        text-align: center; 
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-
-    .contato{
-        width: 50%;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .fale-conosco{
-        height: 600px;
-    }
-    .contato {
-        width: 65%;
-    }
-
-    .contato h2 {
-        margin-top: 20px;
-        font-size: 20px;
-    }
-
     .social{
         display: flex;
         flex-direction: column-reverse;
     }
 
     .infos{
+        width: 100vw;
         height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .infos h2{
@@ -196,32 +173,19 @@ input[type='submit']{
 
     .info{
         flex-direction: row-reverse;
+        justify-content: center;
         width: 300px;
     }
 
-    #nome, #email, #telefone, #conheceu, #assunto, #mensagem{
-        font-size: 13px;
-        height: 25px;
+    .contato{
+        width: 50%;
+        margin: 0 auto;
     }
 
-    #mensagem{
-        height: 60px;
-    }
-
-    input[type='submit']{
-        width: 130px;
-        height: 30px;
-        font-size: 13px;
-        margin: 15px 0;
-    }
-
-    .pin-icon{
-        visibility: hidden;
-    }
-
-    .instagram-info, .facebook-info{
+    .instagram-info, .facebook-info, .pin-icon{
         visibility: hidden;
         height: 0;
+        width: 0;
     }
 
     .social-mobile{
@@ -247,6 +211,36 @@ input[type='submit']{
         background-color: #30736C;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .fale-conosco{
+        height: 600px;
+    }
+    .contato {
+        width: 65%;
+    }
+
+    .contato h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #nome, #email, #telefone, #conheceu, #assunto, #mensagem{
+        font-size: 13px;
+        height: 25px;
+    }
+
+    #mensagem{
+        height: 60px;
+    }
+
+    input[type='submit']{
+        width: 130px;
+        height: 30px;
+        font-size: 13px;
+        margin: 15px 0;
     }
 }
 
