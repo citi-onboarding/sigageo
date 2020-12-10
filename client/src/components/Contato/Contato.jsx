@@ -7,12 +7,33 @@ import './Contato.css';
 
 function Contato(){
 
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [telefone, setTelefone] = useState('');
-    const [conheceu, setConheceu] = useState('');
-    const [assunto, setAssunto] = useState('');
-    const [mensagem, setMensagem] = useState('');
+    const [campos, setCampos] = useState({
+        nome: '',
+        email: '',
+        telefone: '',
+        conheceu: '',
+        assunto: '',
+        mensagem: '',
+    });
+
+    const updateField = e => {
+        setCampos({
+            ...campos,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleSubmit = async (event) => {
+        try {
+          event.preventDefault();
+    
+          await axios.post('http://localhost:3001/send', campos);
+    
+          console.log('Email enviado com sucesso!');
+        } catch (err) {
+          console.log(err?.response || err);
+        }
+      };
 
     const [contato, setContato] = useState([]);
 
@@ -27,36 +48,40 @@ function Contato(){
             <div className="fale-conosco">
                 <div className="contato">
                     <h2>FALE CONOSCO</h2>
-                    <form>
+                    <form onSubmit={handleSubmit} >
                         <input 
+                            required
                             type="text" 
                             name="nome" 
                             id="nome" 
-                            value = {nome} 
-                            onChange={(e) => setNome(e.target.value)}
+                            value = {campos.nome} 
+                            onChange={updateField}
                             placeholder="NOME"
                         />
                         <input 
+                            required
                             type="email" 
                             name="email" 
                             id="email" 
-                            value = {email} 
-                            onChange={(e) => setEmail(e.target.value)}
+                            value = {campos.email} 
+                            onChange={updateField}
                             placeholder="EMAIL"
                         />
                         <input 
+                            required
                             type="tel" 
                             name="telefone" 
                             id="telefone"
-                            value = {telefone} 
-                            onChange={(e) => setTelefone(e.target.value)}
+                            value = {campos.telefone} 
+                            onChange={updateField}
                             placeholder="TELEFONE"
                             />
                         <select 
+                            required
                             name="conheceu" 
                             id="conheceu"
-                            value = {conheceu} 
-                            onChange={(e) => setConheceu(e.target.value)}
+                            value = {campos.conheceu} 
+                            onChange={updateField}
                         >
                             <option disabled defaultValue value="">COMO NOS CONHECEU</option>
                             <option value="indicação">INDICAÇÃO</option>
@@ -66,10 +91,11 @@ function Contato(){
                             <option value="facebook">FACEBOOK</option>
                         </select>
                         <select 
+                            required
                             name="assunto" 
                             id="assunto"
-                            value = {assunto} 
-                            onChange={(e) => setAssunto(e.target.value)}
+                            value = {campos.assunto} 
+                            onChange={updateField}
                         >
                             <option disabled defaultValue value="">ASSUNTO</option>
                             <option value="projeto">PROJETO</option>
@@ -77,10 +103,11 @@ function Contato(){
                             <option value="outro">OUTRO</option>
                         </select>
                         <textarea 
+                            required
                             name="mensagem" 
                             id="mensagem" 
-                            value = {mensagem} 
-                            onChange={(e) => setMensagem(e.target.value)}
+                            value = {campos.mensagem} 
+                            onChange={updateField}
                             placeholder="MENSAGEM"
                         />
                         <input type="submit" value="ENVIAR"/>
