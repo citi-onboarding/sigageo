@@ -45,6 +45,7 @@
     display: flex;
     align-items: center;
     margin: 20px auto;
+    z-index: 2;
 }
 
 .next{

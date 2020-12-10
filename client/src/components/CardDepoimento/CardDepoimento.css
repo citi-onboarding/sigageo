@@ -49,7 +49,6 @@
   align-items: center;
   font-family: "Roboto";
   box-sizing: border-box;
-  margin: 0 10%;
 }
 
 .depoimento-header {
@@ -80,11 +79,18 @@
 .card-depoimento #texto-depoimento {
   margin: 3% 0;
   font-size: 90%;
+  width: 100%;
 }
 
 .card-depoimento span {
   display: block;
   text-align: center;
+}
+
+@media only screen and (max-width: 1300px){
+  .card-depoimento{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -102,6 +108,9 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
+    padding: 10%;
+    height: 100%;
+    flex-wrap: nowrap;
   }
 
   .card-depoimento h3 {
@@ -109,12 +118,12 @@
   }
 
   .depoimento-header{
-      text-align: center;
-      margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .card-depoimento #texto-depoimento {
-    font-size: 1em;
+    font-size: 90%;
     text-align: center;
   }
 }
