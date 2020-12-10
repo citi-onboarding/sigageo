@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Roboto';
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 }
 .card-servico{
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .card-servico h2 {
-    width: 70%;
+    width: 100%;
     font-weight: 900;
     font-size: 150%;
     color: #30736C;

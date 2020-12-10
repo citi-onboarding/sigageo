@@ -1,10 +1,10 @@
 import {
-  SlickDepoimentos,
+  PostList,
 } from './components';
 
 function App() {
   return (
-    <SlickDepoimentos />
+    <PostList />
   );
 }
 
