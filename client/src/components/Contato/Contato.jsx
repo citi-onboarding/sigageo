@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Room, Email, Instagram, Facebook } from "@material-ui/icons";
+import logo from "./assets/logo.png";
 
 import './Contato.css';
 
@@ -91,20 +92,20 @@ function Contato(){
                 <div className="social">
                     <div className="separador"></div>
                     <div className="endereco-info info">
-                        <span>{contato[0]?.endereco}</span>
+                        <p>{contato[0]?.endereco}</p>
                         <Room className='info-icon pin-icon'/>
                     </div>
                     <div className="separador"></div>
                     <div className="email-info info">
-                        <span>{contato[0]?.email}</span>
+                        <p>{contato[0]?.email}</p>
                         <Email className='info-icon mail-icon'/>
                     </div>
                     <div className="instagram-info info">
-                        <span>{contato[0]?.instagram}</span>
+                        <p>{contato[0]?.instagram}</p>
                         <Instagram className='info-icon ig-icon'/>
                     </div>
                     <div className="facebook-info info">
-                        <span>{contato[0]?.facebook}</span>
+                        <p>{contato[0]?.facebook}</p>
                         <Facebook className='info-icon fb-icon'/>
                     </div>
                     <div className="social-mobile">
@@ -116,7 +117,7 @@ function Contato(){
                         </a>
                     </div>
                 </div>
-                <div className="logo"></div>
+                <img src={logo} alt="logo" className="logo"/>
             </div>
         </div>
     );
