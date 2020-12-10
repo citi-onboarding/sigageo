@@ -4,9 +4,7 @@ import {
 
 function App() {
   return (
-    <div className="site">
-      <PostList />
-    </div>
+    <PostList />
   );
 }
 

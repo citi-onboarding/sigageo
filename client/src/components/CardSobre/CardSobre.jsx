@@ -6,12 +6,12 @@ function CardSobre(props) {
         titulo,
         texto,
         imagem,
-        largura = 360,
-        altura = 370
+        largura = "360px",
+        altura = "fit-content"
     } = props;
 
     return (
-        <div className="card" style ={{width: largura + 'px', height: altura + 'px'}}>
+        <div className="card" style ={{width: largura, height: altura}}>
             <img src={imagem} alt="icone"/>
             <h2>{titulo}</h2>
             <div id="texto">
