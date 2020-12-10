@@ -43,7 +43,7 @@ function SlickServico() {
               titulo={servico.titulo}
               subtitulo={servico.subtitulo}
               texto={servico.descricao}
-              imagem={servico.image[0]?.url}
+              imagem={servico.image[0]?.secure_url}
               key={i}
             />
           );
