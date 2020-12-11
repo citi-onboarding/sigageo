@@ -1,7 +1,8 @@
 import {
   Depoimentos,
   Contato,
-  Footer
+  Footer,
+  Servicos
 } from './components';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       {/*navbar*/} 
       {/*banner*/} 
       {/*sobre nos*/} 
-      {/*servicos*/} 
+      <Servicos />
       <Depoimentos />
       <Contato />
       <Footer />

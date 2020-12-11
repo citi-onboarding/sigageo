@@ -1,0 +1,18 @@
+@font-face{
+    font-family: 'geometr706';
+    src: url(./assets/geometr706-blkcn-bt-black.ttf);
+}
+
+.secao-servicos > h2{
+    font-family: 'geometr706';
+    text-align: center;
+    margin: 60px 0;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 700px){
+    .secao-servicos > h2{
+        margin: 20px 0;
+        font-size: 28px;
+    }
+}
