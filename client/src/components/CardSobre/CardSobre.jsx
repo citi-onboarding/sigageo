@@ -16,7 +16,7 @@ function CardSobre(props) {
             <h2>{titulo}</h2>
             <div id="texto">
                 {(Array.isArray(texto)) ? (
-                    texto.map(linha => <span>{linha}</span>)
+                    texto.map(linha => <p>{linha?.valor}</p>)
                 ) : (
                     <p>{texto}</p>
                 )}

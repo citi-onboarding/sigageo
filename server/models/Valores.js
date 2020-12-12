@@ -9,13 +9,6 @@ const Valores = new keystone.List('Valores', {
 })
 
 Valores.add({
-    icone: {
-        type: Types.CloudinaryImage,
-        require: true,
-        initial: true,
-        label: 'ícone',
-        note: 'Um ícone que represente seu valor'
-    },
     valor: {
         type: Types.Text,
         require: true,
@@ -23,13 +16,6 @@ Valores.add({
         index: true,
         label: 'Valor',
         note: 'Conte-nos sobre o seu valor'
-    },
-    descricao: {
-        type: Types.Textarea,
-        initial: true,
-        index: true,
-        label: 'Descrição',
-        note: 'Descreva esse valor (opcional)'
     }
 });
 
