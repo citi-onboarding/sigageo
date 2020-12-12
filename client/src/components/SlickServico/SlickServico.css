@@ -55,6 +55,7 @@
 
     .slick-servico .slides{
         grid-template-columns: 20% 5% 50% 5% 20%;
+        grid-template-rows: 3fr 1fr;
     }
 }
 
