@@ -8,11 +8,11 @@ function SobreNos() {
     const [valores, setValores] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/api/sobrenos").then(res => {
+        axios.get("/api/sobrenos").then(res => {
             setSobre(res.data[0]);
         });
 
-        axios.get("http://localhost:3001/api/valores").then(res => {
+        axios.get("/api/valores").then(res => {
             setValores(res.data);
         });
     }, []);

@@ -29,9 +29,9 @@ function Contato(){
     
           await axios.post('/send', campos);
     
-          console.log('Email enviado com sucesso!');
+         alert('Email enviado com sucesso!');
         } catch (err) {
-          console.log(err?.response || err);
+         alert(err?.response || err);
         }
       };
 
@@ -48,7 +48,7 @@ function Contato(){
             <div className="fale-conosco">
                 <div className="contato">
                     <h2>FALE CONOSCO</h2>
-                    <form onSubmit={handleSubmit} >
+                    <form onSubmit={handleSubmit} autoComplete="off">
                         <input 
                             required
                             type="text" 
