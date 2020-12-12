@@ -1,5 +1,4 @@
 const path = require('path');
-const keystone = require('keystone');
 const cors = require('cors');
 
 const depoimentos_controller = require('../controllers/depoimentosController');

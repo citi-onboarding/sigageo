@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ed4cb66.chunk.css",
+    "main.js": "/static/js/main.d437cad0.chunk.js",
+    "main.js.map": "/static/js/main.d437cad0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.120840cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.120840cb.js.map",
+    "static/js/2.47758a5c.chunk.js": "/static/js/2.47758a5c.chunk.js",
+    "static/js/2.47758a5c.chunk.js.map": "/static/js/2.47758a5c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8ed4cb66.chunk.css.map": "/static/css/main.8ed4cb66.chunk.css.map",
+    "static/js/2.47758a5c.chunk.js.LICENSE.txt": "/static/js/2.47758a5c.chunk.js.LICENSE.txt",
+    "static/media/Servicos.css": "/static/media/geometr706-blkcn-bt-black.b9826a5c.ttf",
+    "static/media/logo.35611127.png": "/static/media/logo.35611127.png",
+    "static/media/Contato.css": "/static/media/path-2.5bc6c851.png",
+    "static/media/CardDepoimento.css": "/static/media/path.8984694b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.120840cb.js",
+    "static/js/2.47758a5c.chunk.js",
+    "static/css/main.8ed4cb66.chunk.css",
+    "static/js/main.d437cad0.chunk.js"
+  ]
+}
