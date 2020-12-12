@@ -35,7 +35,7 @@ function SlickServico() {
   const size = useWindowSize()
 
   useEffect(() => {
-      axios.get('http://localhost:3001/api/depoimentos').then(result => {
+      axios.get('https://sigageo.herokuapp.com/api/depoimentos').then(result => {
         setDepoimentos(result.data);
       });
   }, []);

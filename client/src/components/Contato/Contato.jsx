@@ -27,7 +27,7 @@ function Contato(){
         try {
           event.preventDefault();
     
-          await axios.post('http://localhost:3001/send', campos);
+          await axios.post('https://sigageo.herokuapp.com/send', campos);
     
           console.log('Email enviado com sucesso!');
         } catch (err) {
@@ -38,7 +38,7 @@ function Contato(){
     const [contato, setContato] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/contatos').then(result => {
+        axios.get('https://sigageo.herokuapp.com/api/contatos').then(result => {
           setContato(result.data);
         });
     }, []);
