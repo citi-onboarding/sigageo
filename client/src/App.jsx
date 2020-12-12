@@ -1,10 +1,10 @@
 import {
-  SobreNos,
+  NavBar,
 } from './components';
 
 function App() {
   return (
-    <SobreNos />
+    <NavBar />
   );
 }
 
