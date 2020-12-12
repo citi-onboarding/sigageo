@@ -1,5 +1,5 @@
 import {
-  PostList,
+  Contato,
 } from './components';
 
 function App() {
