@@ -2,7 +2,7 @@
 .card{
     padding: 10px;
     background-color: #a5e2d7;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,7 +19,7 @@
 .card h2 {
     width: fit-content;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 140%;
     color: #30736C;
     margin-top: 5px;
 }
@@ -30,8 +30,8 @@
 }
 
 .card #texto {
-    margin: 0 20px;
-    font-size: 20px;
+    margin: 10% 20px;
+    font-size: 100%;
 }
 
 .card span {

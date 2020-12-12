@@ -1,0 +1,57 @@
+.site{
+    overflow-x: hidden;
+}
+
+.secao-sobre {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secao-sobre > h2 {
+    font-family: 'geometr706';
+    margin-bottom: 5%;
+}
+
+.secao-sobre > p{
+    font-family: 'Roboto';
+    font-size: 100%;
+}
+
+.card-sobreNos {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+
+.card-sobreNos .card:nth-child(2) {
+    margin-top: -50px;
+
+}
+
+@media only screen and (max-width: 1500px){
+    .card-sobreNos{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .card-sobreNos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-sobreNos .card{
+        margin-bottom: 20px;
+    }
+
+    .card-sobreNos .card:nth-child(2) {
+        margin-top: 0;
+    }
+}

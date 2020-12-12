@@ -2,7 +2,8 @@ import {
   Depoimentos,
   Contato,
   Footer,
-  Servicos
+  Servicos,
+  SobreNos
 } from './components';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="site">
       {/*navbar*/} 
       {/*banner*/} 
-      {/*sobre nos*/} 
+      <SobreNos />
       <Servicos />
       <Depoimentos />
       <Contato />
