@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo img {
+    width: 9em;
+    height: 7em;
+}
+
+.navBar {
+    padding: 5px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    height: 7rem;
+    position: fixed;
+    box-shadow: 1px 4px 7px 2px #CACECA;
+}
+
+.menu ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu li {
+    margin-left: 10px;
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    transition: 0.5s ease;
+}
+
+.menu li a:hover {
+    color: #00A896;
+}
+
+.menu button {
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: white;
+    display: none;
+}
+
+.menu button a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #30736C;
+}
+
+hr {
+    display: none;
+}
+/******MENU HAMBURQUER*****/
+#hamburguer {
+    width: fit-content;
+    height: 12px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: none;
+    margin-top: 18px;
+    margin-left: -3rem;
+    outline: none;
+}
+
+/******PRIMEIRA RETA DO MENU HAMBURQUER*****/
+#hamburguer-1 {
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: #30736C;
+    border-radius: 10px;
+    transition: 0.8s ease;
+}
+
+/******SEGUNDA RETA DO MENU HAMBURQUER*****/
+#hamburguer-2 {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #30736C;
+    border-radius: 10px;
+    transition: 0.8s ease;
+    margin-top: 4px;
+    margin-left: 1.5rem;
+}
+
+/****** ANIMA A PRIMEIRA RETA DO MENU HAMBURQUER*****/
+.active #hamburguer-1 {
+    transform: rotate(425deg);
+    margin-left: -29px;
+    width: 1.7rem;
+    height: 0.2rem;
+}
+
+/******ANIMA A SEGUNDA RETA DO MENU HAMBURQUER*****/
+.active #hamburguer-2 {
+    transform: rotate(-425deg);
+    margin-top: -3px;
+    margin-left: -29px;
+    width: 1.7rem;
+    height: 0.2rem;
+}
+
+/******ATIVA O MENU HAMBURQUER*****/
+.active {
+    transform: translateX(110%);
+}
+
+
+
+/*******************************RESPONSIVO*************************************/
+
+@media only screen and (max-width: 1024px){
+    .menu li a{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .menu li a{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 972px) {
+    .logo img{
+        width: 8rem;
+        height: 6rem;
+    }
+    
+    #hamburguer {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        height: 6rem;
+    }
+
+    .menu {
+        position: fixed;
+        top: 6rem;
+        width: 110%;
+        height: 100%;
+        left: -1rem;
+        background-color: #30736C;
+        transition: 0.5s ease;
+       
+    }
+
+    .menu ul {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 40px;
+        padding-right: 60px;
+    }
+
+    .menu li {
+        margin-top: 2rem;
+        margin-left: -1px;
+    }
+
+    .menu li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    .menu li a:hover {
+        color: #08b8a6;
+    }
+
+    hr {
+        display: block;
+        width: 87%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        border: 1px solid white;
+    }
+
+    .menu button {
+        display: block;
+        margin-left: 38%;
+        width: 8rem;
+        height: 2rem;
+        border-radius: 10px;
+        margin-top: 4rem;
+    }
+
+    .menu button a {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .menu li a{
+        font-size: 23px;
+    }
+
+    hr {
+        border: 0.2px solid white;
+        margin-top: 1rem;
+    }
+
+    .menu button{
+        width: 7.5rem;
+        height: 2rem;
+        border-radius: 9px;
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .logo img {
+        width: 6rem;
+        height: 4rem;
+        margin-left: -3.5rem;
+        margin-top: 0.7rem
+    }
+
+    #hamburguer-1 {
+        width: 4rem;
+        height: 2.06px;
+        margin-left: 15rem;
+        margin-top: -0.1rem;
+    }
+
+    #hamburguer-2 {
+        width: 2.6rem;
+        height: 2.06px;
+        margin-left: 16.4rem;
+    }
+
+    .active #hamburguer-1 {
+        transform: rotate(425deg);
+        margin-top: -1px;
+        margin-left: 19px;
+        width: 1.3rem;
+        height: 0.1rem;
+    }
+    
+    .active #hamburguer-2 {
+        transform: rotate(-425deg);
+        margin-top: -1.3px;
+        margin-left: 18.5px;
+        width: 1.3rem;
+        height: 0.1rem;
+    }
+
+    .menu ul {
+        margin-top: -2rem;
+        margin-left: -1rem;
+        margin-right: -1rem;;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    .menu li {
+        margin-bottom: -0.8rem;
+    }
+
+    hr {
+        border: 0.2px solid white;
+        margin-top: 1rem;
+    }
+
+    .menu button {
+        margin-left: 36%;
+        width: 7rem;
+        height: 1.7rem;
+        border-radius: 9px;
+    }
+
+    .menu button a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    #hamburguer-1 {
+        margin-left: 13rem;
+    }
+
+    #hamburguer-2 {
+        margin-left: 14.4rem;
+    }
+
+    .menu li a{
+        font-size: 18px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #hamburguer-1 {
+        margin-left: 10rem;
+    }
+
+    #hamburguer-2 {
+        margin-left: 11.4rem;
+    }
+    .menu li  {
+        padding-top: -90px;
+    }
+    .menu li a {
+        font-size: 15px
+    }
+
+    .menu {
+        padding-top: -2rem;
+    }
+
+    .menu button{
+        width: 6.4rem;
+        height: 1.5rem;
+        border-radius: 7px;
+    }
+
+    .menu button a{
+        font-size: 12px;
+    }
+}
+

@@ -9,3 +9,4 @@ export { default as Depoimentos } from './Depoimentos';
 export { default as Footer } from './Footer';
 export { default as Servicos } from './Servicos';
 export { default as SobreNos } from './SobreNos';
+export { default as NavBar } from './NavBar';

@@ -3,13 +3,14 @@ import {
   Contato,
   Footer,
   Servicos,
-  SobreNos
+  SobreNos,
+  NavBar
 } from './components';
 
 function App() {
   return (
     <div className="site">
-      {/*navbar*/} 
+      <NavBar />
       {/*banner*/} 
       <SobreNos />
       <Servicos />
