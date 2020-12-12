@@ -154,6 +154,7 @@ input[type='submit']:hover{
     .social{
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .infos{
@@ -170,13 +171,21 @@ input[type='submit']:hover{
     }
 
     .info p {
+        font-size: 100%;
         text-align: center;
+    }
+
+    .endereco-info{
+        width: 80% !important;
+    }
+
+    .email-info p{
+        margin-left: 5px;
     }
 
     .info{
         flex-direction: row-reverse;
-        justify-content: center;
-        width: 300px;
+        width: fit-content;
     }
 
     .contato{
@@ -216,22 +225,23 @@ input[type='submit']:hover{
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 700px){
     .fale-conosco{
         height: 600px;
     }
     .contato {
-        width: 65%;
+        margin-top: 30px;
+        width: 80%;
     }
 
     .contato h2 {
-        margin-top: 20px;
+        margin: 20px 0;
         font-size: 20px;
     }
 
     #nome, #email, #telefone, #conheceu, #assunto, #mensagem{
         font-size: 13px;
-        height: 25px;
+        height: 30px;
     }
 
     #mensagem{

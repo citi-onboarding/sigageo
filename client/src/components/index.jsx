@@ -5,4 +5,5 @@ export { default as SlickDepoimentos } from './SlickDepoimentos';
 export { default as CardSobre } from './CardSobre';
 export { default as CardDepoimento } from './CardDepoimento';
 export { default as Contato } from './Contato';
+export { default as Depoimentos } from './Depoimentos';
 export { default as Footer } from './Footer';
