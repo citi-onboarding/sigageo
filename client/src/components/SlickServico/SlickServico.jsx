@@ -12,7 +12,7 @@ function SlickServico() {
   const [atual, setAtual] = useState(1);
 
   useEffect(() => {
-      axios.get('https://sigageo.herokuapp.com/api/servicos').then(result => {
+      axios.get('/api/servicos').then(result => {
         setServicos(result.data);
       });
   }, []);
