@@ -3,7 +3,7 @@
 }
 
 .banner{
-    padding-top: calc(110px - 10%);
+    padding-top: calc(120px - 10%);
     height: 50vw;
     position: relative !important;
 }
@@ -36,7 +36,7 @@
 .titulo {
     position: absolute;
     z-index: 2;
-    padding: 200px 5%;
+    padding: 18% 5%;
     display: inline;
     width: calc(40px + 33vw);
 }
@@ -90,7 +90,7 @@ h1 {
         position: relative;
         width: 78%;
         height: 91rem;
-        margin-left: 56rem;
+        margin-left: 50rem;
         margin-top: -31rem;
     }
 
@@ -98,14 +98,14 @@ h1 {
         position: absolute;
         width: 90%;
         height: 111rem;
-        right: -38rem;
+        right: -30rem;
         top: -46.5rem;
     }
 
     .titulo {
         position: absolute;
         z-index: 2;
-        padding: 12% 5%;
+        padding: 20% 5%;
         display: inline;
         width: calc(40px + 47.8vw);
     }
@@ -129,7 +129,7 @@ h1 {
         text-align: center;
         border-radius: 7px;
         background-color: #00A896;
-        transform: translateY(1000%);
+        transform: translateY(1400%);
         margin-left: 5%;
         box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
         transition: 0.5s;

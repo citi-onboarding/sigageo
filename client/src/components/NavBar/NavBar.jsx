@@ -17,7 +17,7 @@ function NavBar() {
 
                 <div className="menu active">
                     <ul>
-                        <li><a href="/" onClick={Hamburguer}>Início</a></li>
+                        <li><a href="#inicio" onClick={Hamburguer}>Início</a></li>
                         <hr />
                         <li><a href="#sobre-nos" onClick={Hamburguer}>Sobre Nós</a></li>
                         <hr />

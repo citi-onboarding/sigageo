@@ -12,7 +12,7 @@ function Banner() {
     }, [])
 
     return (
-        <div className="banner">
+        <div className="banner" id="inicio">
             <div className="titulo">
                 <h1>{banner[0]?.titulo}</h1>
             </div>
