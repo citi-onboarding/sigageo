@@ -17,19 +17,19 @@ function NavBar() {
 
                 <div class="menu active">
                     <ul>
-                        <li><a href="#">Início</a></li>
+                        <li><a href="/" onClick={Hamburguer}>Início</a></li>
                         <hr />
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#sobre-nos" onClick={Hamburguer}>Sobre Nós</a></li>
                         <hr />
-                        <li><a href="#">Serviço</a></li>
+                        <li><a href="#servicos" onClick={Hamburguer}>Serviço</a></li>
                         <hr />
-                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#depoimentos" onClick={Hamburguer}>Depoimentos</a></li>
                         <hr />
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#contato" onClick={Hamburguer}>Contato</a></li>
                         <hr />
                     </ul>
 
-                    <button><a href="#" class="btn-menu">CONTATE-NOS</a></button>
+                    <button><a href="/" class="btn-menu">CONTATE-NOS</a></button>
                 </div>
 
                 <button id="hamburguer" onClick={Hamburguer}>

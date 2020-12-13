@@ -4,16 +4,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo img {
-    width: 9em;
-    height: 7em;
+    width: 8em;
 }
 
 .navBar {
-    padding: 5px 80px;
+    padding: 5px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 nav {
@@ -22,6 +26,7 @@ nav {
     position: fixed;
     box-shadow: 1px 4px 7px 2px #CACECA;
     background-color: white;
+    z-index: 1000;
 }
 
 .menu ul {
@@ -121,11 +126,6 @@ hr {
     height: 0.2rem;
 }
 
-/******ATIVA O MENU HAMBURQUER*****/
-.active {
-    transform: translateX(110%);
-}
-
 
 
 /*******************************RESPONSIVO*************************************/
@@ -133,6 +133,15 @@ hr {
 @media only screen and (max-width: 1024px){
     .menu li a{
         font-size: 40px;
+    }
+
+    /******ATIVA O MENU HAMBURQUER*****/
+    .active {
+        transform: translateX(110%);
+    }
+
+    .navBar{
+        height: 100%;
     }
 }
 
@@ -233,14 +242,6 @@ hr {
 }
 
 @media only screen and (max-width: 414px) {
-
-    .logo img {
-        width: 6rem;
-        height: 4rem;
-        margin-left: -3.5rem;
-        margin-top: 0.7rem
-    }
-
     #hamburguer-1 {
         width: 4rem;
         height: 2.06px;

@@ -44,7 +44,7 @@ function Contato(){
     }, []);
 
     return(
-        <div className="contato-sec">
+        <div className="contato-sec" id="contato">
             <div className="fale-conosco">
                 <div className="contato">
                     <h2>FALE CONOSCO</h2>

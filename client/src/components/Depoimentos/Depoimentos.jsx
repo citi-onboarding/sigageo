@@ -4,7 +4,7 @@ import './Depoimentos.css';
 
 function Depoimentos() {
     return(
-        <div className="secao-depoimentos">
+        <div className="secao-depoimentos" id="depoimentos">
             <div className="descricao-depoimentos">
                 <h2>DEPOIMENTOS</h2>
                 <p>Saiba quem trabalhou conosco e o que ele(a) achou da experiência.</p>

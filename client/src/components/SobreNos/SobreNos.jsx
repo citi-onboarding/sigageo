@@ -19,7 +19,7 @@ function SobreNos() {
 
     return (
 
-        <div className="secao-sobre">
+        <div className="secao-sobre" id="sobre-nos">
             <h2>NOSSA HISTÓRIA</h2>
 
             <p>{sobre?.quemSomos}</p>
