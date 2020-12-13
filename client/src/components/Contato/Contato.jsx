@@ -146,6 +146,7 @@ function Contato(){
                 </div>
                 <img src={logo} alt="logo" className="logo"/>
             </div>
+            <div id="enfeite"></div>
         </div>
     );
 }
