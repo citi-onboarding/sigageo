@@ -99,7 +99,7 @@ h1 {
         width: 90%;
         height: 111rem;
         right: -30rem;
-        top: -46.5rem;
+        top: -51rem;
     }
 
     .titulo {
@@ -120,8 +120,8 @@ h1 {
     .banner button {
         position: absolute;
         z-index: 2;
-        width: 8.4rem;
-        height: 2.3rem;
+        width: 10rem;
+        height: 3rem;
         border: none;
         outline: none;
         cursor: pointer;
@@ -129,14 +129,14 @@ h1 {
         text-align: center;
         border-radius: 7px;
         background-color: #00A896;
-        transform: translateY(1400%);
+        transform: translateY(1200%);
         margin-left: 5%;
         box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
         transition: 0.5s;
     }
 
     button a {
-        font-size: 18.8px;
+        font-size: 18px !important;
         font-weight: 100;
         text-decoration: none;
         color: white;
