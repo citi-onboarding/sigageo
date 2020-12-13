@@ -29,19 +29,19 @@ function SobreNos() {
                     titulo='VISÃO'
                     texto={sobre?.visao}
                     imagem='https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/eye-24-512.png'
-                    largura="calc(200px + 10%)" altura="calc(220px + 7vw)"
+                    largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
                 <CardSobre
                     titulo='MISSÃO'
                     texto={sobre?.missao}
                     imagem='https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/target.png'
-                    largura="calc(200px + 10%)" altura="calc(220px + 7vw)"
+                    largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
                 <CardSobre
                     titulo='VALORES'
                     texto={valores}
                     imagem='https://www.flaticon.com/svg/static/icons/svg/1528/1528669.svg'
-                    largura="calc(200px + 10%)" altura="calc(220px + 7vw)"
+                    largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
             </div>
 
