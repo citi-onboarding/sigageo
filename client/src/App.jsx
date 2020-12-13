@@ -4,14 +4,15 @@ import {
   Footer,
   Servicos,
   SobreNos,
-  NavBar
+  NavBar,
+  Banner,
 } from './components';
 
 function App() {
   return (
     <div className="site">
       <NavBar />
-      {/*banner*/} 
+      <Banner />  
       <SobreNos />
       <Servicos />
       <Depoimentos />
