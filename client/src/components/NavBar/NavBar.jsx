@@ -9,13 +9,13 @@ function NavBar() {
 
     return (
         <nav>
-            <div class="navBar">
-                <div class="logo">
+            <div className="navBar">
+                <div className="logo">
                     <img src={Logo_SigaGeo} alt="logo Siga Geo" />
 
                 </div>
 
-                <div class="menu active">
+                <div className="menu active">
                     <ul>
                         <li><a href="/" onClick={Hamburguer}>Início</a></li>
                         <hr />
@@ -29,7 +29,7 @@ function NavBar() {
                         <hr />
                     </ul>
 
-                    <button><a href="/" class="btn-menu">CONTATE-NOS</a></button>
+                    <button><a href="#contato" className="btn-menu" onClick={Hamburguer}>CONTATE-NOS</a></button>
                 </div>
 
                 <button id="hamburguer" onClick={Hamburguer}>
