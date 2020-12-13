@@ -1,10 +1,10 @@
 import {
-  NavBar,
+  Banner,
 } from './components';
 
 function App() {
   return (
-    <NavBar />
+    <Banner />
   );
 }
 

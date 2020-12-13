@@ -7,3 +7,4 @@ export { default as CardDepoimento } from './CardDepoimento';
 export { default as Footer } from './Footer';
 export { default as SobreNos } from './SobreNos';
 export { default as NavBar } from './NavBar';
+export { default as Banner } from './Banner';
