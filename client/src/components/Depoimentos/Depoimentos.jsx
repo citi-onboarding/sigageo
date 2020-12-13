@@ -12,6 +12,7 @@ function Depoimentos() {
             <div className="slick-depoimentos-div">
                 <SlickDepoimentos />
             </div>
+            <div id="enfeite-2"></div>
         </div>
     );
 }

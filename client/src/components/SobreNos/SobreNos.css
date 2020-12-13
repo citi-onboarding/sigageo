@@ -3,6 +3,7 @@
 }
 
 .secao-sobre {
+    position: relative;
     width: 80%;
     margin: 0 auto;
     padding-top: 110px;
@@ -36,9 +37,35 @@
 
 }
 
+#enfeite-3{
+    position: absolute;
+    right: -10vw;
+    bottom: -45%;
+    width: 17vw;
+    height: calc(100px + 40vw);
+    background-image: url(./assets/enfeite-3.png);
+    background-size: cover;
+}
+
+#enfeite-4{
+    position: absolute;
+    left: -10vw;
+    bottom: -45%;
+    width: 15vw;
+    height: calc(100px + 40vw);
+    background-image: url(./assets/enfeite-4.png);
+    background-position: 100%;
+    background-size: cover;
+}
+
+
 @media only screen and (max-width: 1500px){
     .card-sobreNos{
         width: 100%;
+    }
+
+    #enfeite-4{
+        width: 10vw;
     }
 }
 
@@ -63,5 +90,15 @@
 
     .secao-sobre p{
         font-size: 100%;
+    }
+
+    #enfeite-3{
+        right: -10vw;
+        bottom: 18%;
+        width: 25vw;
+    }
+
+    #enfeite-4{
+        bottom: 70%;
     }
 }

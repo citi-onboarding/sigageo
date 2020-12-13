@@ -44,7 +44,8 @@ function SobreNos() {
                     largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
             </div>
-
+            <div id="enfeite-3"></div>
+            <div id="enfeite-4"></div>
         </div>
     );
 
