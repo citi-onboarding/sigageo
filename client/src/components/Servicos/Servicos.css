@@ -3,6 +3,10 @@
     src: url(./assets/geometr706-blkcn-bt-black.ttf);
 }
 
+.secao-servicos{
+    padding-top: 110px;
+}
+
 .secao-servicos > h2{
     font-family: 'geometr706';
     text-align: center;

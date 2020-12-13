@@ -5,7 +5,8 @@
 
 .secao-depoimentos{
     width: 90%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 110px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
