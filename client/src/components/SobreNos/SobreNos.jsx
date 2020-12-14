@@ -3,6 +3,10 @@ import "./SobreNos.css"
 import axios from "axios";
 import { useEffect, useState } from "react"
 
+import visao from './assets/visao.png'
+import missao from './assets/missao.png'
+import valor from './assets/valor.png'
+
 function SobreNos() {
     const [sobre, setSobre] = useState([]);
     const [valores, setValores] = useState([]);
@@ -28,19 +32,19 @@ function SobreNos() {
                 <CardSobre
                     titulo='VISÃO'
                     texto={sobre?.visao}
-                    imagem='https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/eye-24-512.png'
+                    imagem={visao}
                     largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
                 <CardSobre
                     titulo='MISSÃO'
                     texto={sobre?.missao}
-                    imagem='https://uxwing.com/wp-content/themes/uxwing/download/01-user_interface/target.png'
+                    imagem={missao}
                     largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
                 <CardSobre
                     titulo='VALORES'
                     texto={valores}
-                    imagem='https://www.flaticon.com/svg/static/icons/svg/1528/1528669.svg'
+                    imagem={valor}
                     largura="calc(180px + 10%)" altura="calc(220px + 7vw)"
                 />
             </div>

@@ -52,7 +52,7 @@
 @media only screen and (max-width: 1300px){
     .secao-depoimentos{
         width: 100%;
-        margin-bottom: -110px;
+        margin-bottom: -110px !important;
         grid-template-columns: 1fr;
         grid-template-rows: 20% 80%;
     }

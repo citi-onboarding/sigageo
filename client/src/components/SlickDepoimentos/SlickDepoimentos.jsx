@@ -67,7 +67,7 @@ function SlickServico() {
               nome={servico.name}
               cargo={servico.cargo}
               texto={servico.depoimento}
-              imagem={servico.imagem?.url}
+              imagem={servico.imagem?.secure_url}
               key={i}
             />
           );
