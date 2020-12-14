@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b423d04.chunk.css",
-    "main.js": "/static/js/main.9d0e202e.chunk.js",
-    "main.js.map": "/static/js/main.9d0e202e.chunk.js.map",
+    "main.css": "/static/css/main.d6b0d02b.chunk.css",
+    "main.js": "/static/js/main.2ffe8d54.chunk.js",
+    "main.js.map": "/static/js/main.2ffe8d54.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.120840cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.120840cb.js.map",
     "static/js/2.7335b046.chunk.js": "/static/js/2.7335b046.chunk.js",
     "static/js/2.7335b046.chunk.js.map": "/static/js/2.7335b046.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5b423d04.chunk.css.map": "/static/css/main.5b423d04.chunk.css.map",
+    "static/css/main.d6b0d02b.chunk.css.map": "/static/css/main.d6b0d02b.chunk.css.map",
     "static/js/2.7335b046.chunk.js.LICENSE.txt": "/static/js/2.7335b046.chunk.js.LICENSE.txt",
     "static/media/Logo_SigaGeo.bc5ce24d.png": "/static/media/Logo_SigaGeo.bc5ce24d.png",
     "static/media/Svg-maior.19b90e62.svg": "/static/media/Svg-maior.19b90e62.svg",
@@ -17,12 +17,15 @@
     "static/media/Contato.css": "/static/media/path-2.5bc6c851.png",
     "static/media/Servicos.css": "/static/media/geometr706-blkcn-bt-black.b9826a5c.ttf",
     "static/media/logo.35611127.png": "/static/media/logo.35611127.png",
-    "static/media/CardDepoimento.css": "/static/media/path.8984694b.png"
+    "static/media/missao.19061308.png": "/static/media/missao.19061308.png",
+    "static/media/CardDepoimento.css": "/static/media/path.8984694b.png",
+    "static/media/valor.8cd96709.png": "/static/media/valor.8cd96709.png",
+    "static/media/visao.df9518be.png": "/static/media/visao.df9518be.png"
   },
   "entrypoints": [
     "static/js/runtime-main.120840cb.js",
     "static/js/2.7335b046.chunk.js",
-    "static/css/main.5b423d04.chunk.css",
-    "static/js/main.9d0e202e.chunk.js"
+    "static/css/main.d6b0d02b.chunk.css",
+    "static/js/main.2ffe8d54.chunk.js"
   ]
 }
