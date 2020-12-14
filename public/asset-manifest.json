@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.333d5652.chunk.css",
+    "main.css": "/static/css/main.5b423d04.chunk.css",
     "main.js": "/static/js/main.9d0e202e.chunk.js",
     "main.js.map": "/static/js/main.9d0e202e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.120840cb.js",
@@ -8,7 +8,7 @@
     "static/js/2.7335b046.chunk.js": "/static/js/2.7335b046.chunk.js",
     "static/js/2.7335b046.chunk.js.map": "/static/js/2.7335b046.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.333d5652.chunk.css.map": "/static/css/main.333d5652.chunk.css.map",
+    "static/css/main.5b423d04.chunk.css.map": "/static/css/main.5b423d04.chunk.css.map",
     "static/js/2.7335b046.chunk.js.LICENSE.txt": "/static/js/2.7335b046.chunk.js.LICENSE.txt",
     "static/media/Logo_SigaGeo.bc5ce24d.png": "/static/media/Logo_SigaGeo.bc5ce24d.png",
     "static/media/Svg-maior.19b90e62.svg": "/static/media/Svg-maior.19b90e62.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.120840cb.js",
     "static/js/2.7335b046.chunk.js",
-    "static/css/main.333d5652.chunk.css",
+    "static/css/main.5b423d04.chunk.css",
     "static/js/main.9d0e202e.chunk.js"
   ]
 }

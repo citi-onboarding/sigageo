@@ -168,7 +168,7 @@ hr {
         left: -1rem;
         background-color: #30736C;
         transition: 0.5s ease;
-       
+        overflow: scroll;
     }
 
     .menu ul {
