@@ -21,7 +21,7 @@ function NavBar() {
                         <hr />
                         <li><a href="#sobre-nos" onClick={Hamburguer}>Sobre Nós</a></li>
                         <hr />
-                        <li><a href="#servicos" onClick={Hamburguer}>Serviço</a></li>
+                        <li><a href="#servicos" onClick={Hamburguer}>Serviços</a></li>
                         <hr />
                         <li><a href="#depoimentos" onClick={Hamburguer}>Depoimentos</a></li>
                         <hr />
